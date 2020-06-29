@@ -1,0 +1,76 @@
+{
+  "kind": "singleType",
+  "collectionName": "sponsorships",
+  "info": {
+    "name": "Sponsorship"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "StudentsTopImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "StudentsTopBody": {
+      "type": "richtext"
+    },
+    "StudentsPrimaryBody": {
+      "type": "richtext"
+    },
+    "StudentsPrimaryImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "StudentsSecondaryBody": {
+      "type": "richtext"
+    },
+    "StudentsSecondaryImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "PostHighTopImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "StudentsApplicationLink": {
+      "type": "string"
+    },
+    "PostHighTopBody": {
+      "type": "richtext"
+    },
+    "PostHighLeftImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "PostHighLowerText": {
+      "type": "richtext"
+    }
+  }
+}

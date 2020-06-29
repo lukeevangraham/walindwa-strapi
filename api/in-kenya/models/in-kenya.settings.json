@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "in_kenyas",
+  "info": {
+    "name": "In Kenya"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "KenyaFacts": {
+      "type": "richtext"
+    },
+    "KenyaWalindwasRole": {
+      "type": "richtext"
+    },
+    "KenyaEBCCK": {
+      "type": "richtext"
+    },
+    "FirstSectionLabel": {
+      "type": "string"
+    },
+    "SecondSectionLabel": {
+      "type": "string"
+    },
+    "ThirdSectionLabel": {
+      "type": "string"
+    },
+    "ekhsTopPhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "ekhsBody": {
+      "type": "richtext"
+    },
+    "ekhsThreeBottomPhotos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

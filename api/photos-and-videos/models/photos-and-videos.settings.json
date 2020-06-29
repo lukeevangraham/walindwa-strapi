@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photos_and_videos",
+  "info": {
+    "name": "Photos And Videos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "embedCode": {
+      "type": "text"
+    },
+    "photos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "videos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

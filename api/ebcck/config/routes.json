@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ebccks",
+      "handler": "ebcck.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ebccks/count",
+      "handler": "ebcck.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ebccks/:id",
+      "handler": "ebcck.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ebccks",
+      "handler": "ebcck.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ebccks/:id",
+      "handler": "ebcck.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ebccks/:id",
+      "handler": "ebcck.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

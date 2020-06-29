@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "givings",
+  "info": {
+    "name": "Giving"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "topText": {
+      "type": "richtext"
+    },
+    "designatedTopText": {
+      "type": "richtext"
+    },
+    "MainText": {
+      "type": "richtext"
+    },
+    "givingImages": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

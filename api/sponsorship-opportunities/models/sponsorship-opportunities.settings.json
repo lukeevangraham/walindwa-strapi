@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsorship_opportunities",
+  "info": {
+    "name": "Sponsorship Opportunities"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female"
+      ]
+    },
+    "postHighSchool": {
+      "type": "boolean",
+      "default": false
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "grade": {
+      "type": "string"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "biography": {
+      "type": "richtext"
+    },
+    "nameOfSchool": {
+      "type": "string"
+    },
+    "fieldOfStudy": {
+      "type": "string"
+    },
+    "sponsor_categories": {
+      "via": "sponsorship_opportunities",
+      "collection": "sponsor-category"
+    }
+  }
+}

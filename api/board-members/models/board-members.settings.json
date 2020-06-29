@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "board_members",
+  "info": {
+    "name": "Board Members"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "prefix": {
+      "type": "string",
+      "required": true
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Biography": {
+      "type": "text",
+      "required": false
+    },
+    "slug": {
+      "type": "text"
+    },
+    "BiographyNew": {
+      "type": "richtext"
+    }
+  }
+}

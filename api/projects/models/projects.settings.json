@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "Projects"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "photos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "quote": {
+      "type": "string"
+    },
+    "Published": {
+      "type": "boolean",
+      "default": false,
+      "private": false,
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Current",
+        "Completed"
+      ],
+      "required": true
+    }
+  }
+}

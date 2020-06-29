@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/in-kenya",
+      "handler": "in-kenya.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/in-kenya",
+      "handler": "in-kenya.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/in-kenya",
+      "handler": "in-kenya.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

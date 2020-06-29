@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sponsorship-opportunities",
+      "handler": "sponsorship-opportunities.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sponsorship-opportunities/count",
+      "handler": "sponsorship-opportunities.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sponsorship-opportunities/:id",
+      "handler": "sponsorship-opportunities.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sponsorship-opportunities",
+      "handler": "sponsorship-opportunities.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sponsorship-opportunities/:id",
+      "handler": "sponsorship-opportunities.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sponsorship-opportunities/:id",
+      "handler": "sponsorship-opportunities.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

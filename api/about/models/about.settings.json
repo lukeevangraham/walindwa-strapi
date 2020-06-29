@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "name": "About"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "OverviewHeading": {
+      "type": "string"
+    },
+    "OverviewBody": {
+      "type": "richtext"
+    },
+    "OverviewVision": {
+      "type": "text"
+    },
+    "OverviewMission": {
+      "type": "text"
+    },
+    "CorporateInfoHeading": {
+      "type": "string"
+    },
+    "CorporateInfoSubHeading": {
+      "type": "string"
+    },
+    "CorporateInfoBody": {
+      "type": "richtext"
+    },
+    "CorporateInfoLeftColumnHeading": {
+      "type": "string"
+    },
+    "CorporateInfoRightColumnHeading": {
+      "type": "string"
+    },
+    "CorporateInfoRightColumnBody": {
+      "type": "text"
+    },
+    "CorporateInfoLeftColumnBody": {
+      "type": "text"
+    }
+  }
+}

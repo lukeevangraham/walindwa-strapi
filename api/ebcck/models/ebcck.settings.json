@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ebccks",
+  "info": {
+    "name": "EBCCK"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Body": {
+      "type": "richtext"
+    }
+  }
+}

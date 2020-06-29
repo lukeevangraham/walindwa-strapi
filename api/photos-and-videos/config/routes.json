@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/photos-and-videos",
+      "handler": "photos-and-videos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/photos-and-videos/count",
+      "handler": "photos-and-videos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/photos-and-videos/:id",
+      "handler": "photos-and-videos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/photos-and-videos",
+      "handler": "photos-and-videos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/photos-and-videos/:id",
+      "handler": "photos-and-videos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/photos-and-videos/:id",
+      "handler": "photos-and-videos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
