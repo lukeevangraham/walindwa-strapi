@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "spon_cats",
+  "info": {
+    "name": "Spon-Cats"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "sponsorship_opportunities": {
+      "via": "spon_cat",
+      "collection": "sponsorship-opportunities"
+    }
+  }
+}

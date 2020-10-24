@@ -41,6 +41,33 @@
     },
     "CorporateInfoLeftColumnBody": {
       "type": "text"
+    },
+    "stat1Label": {
+      "type": "string"
+    },
+    "stat1Number": {
+      "type": "biginteger"
+    },
+    "stat2Label": {
+      "type": "string"
+    },
+    "stat2Number": {
+      "type": "biginteger"
+    },
+    "stat3Label": {
+      "type": "string"
+    },
+    "stat3Number": {
+      "type": "biginteger"
+    },
+    "stat4Label": {
+      "type": "string"
+    },
+    "stat4Number": {
+      "type": "biginteger"
+    },
+    "boardBottomText2": {
+      "type": "richtext"
     }
   }
 }

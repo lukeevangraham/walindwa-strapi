@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/spon-cats",
+      "handler": "spon-cats.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/spon-cats/count",
+      "handler": "spon-cats.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/spon-cats/:id",
+      "handler": "spon-cats.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/spon-cats",
+      "handler": "spon-cats.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/spon-cats/:id",
+      "handler": "spon-cats.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/spon-cats/:id",
+      "handler": "spon-cats.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

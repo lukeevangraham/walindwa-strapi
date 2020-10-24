@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timelines",
+  "info": {
+    "name": "Timeline"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "time": {
+      "type": "string",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    }
+  }
+}

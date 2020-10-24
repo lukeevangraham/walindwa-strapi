@@ -41,6 +41,15 @@
         "Completed"
       ],
       "required": true
+    },
+    "coverPhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
     }
   }
 }
