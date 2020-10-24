@@ -4,7 +4,7 @@
   "proxy": {
     "enabled": true,
     "ssl": true,
-    "host": "admin.moreleft.com"
+    "host": "admin.walindwa.org"
   },
   "cron": {
     "enabled": false
