@@ -19,6 +19,123 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "topImages": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "photoSlider": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "number1Icon": {
+      "type": "string"
+    },
+    "number1Heading": {
+      "type": "string"
+    },
+    "number1Body": {
+      "type": "richtext"
+    },
+    "number2Icon": {
+      "type": "string"
+    },
+    "number2Heading": {
+      "type": "string"
+    },
+    "number2Body": {
+      "type": "richtext"
+    },
+    "number3Icon": {
+      "type": "string"
+    },
+    "number3Heading": {
+      "type": "string"
+    },
+    "number3Body": {
+      "type": "richtext"
+    },
+    "number4Icon": {
+      "type": "string"
+    },
+    "number4Heading": {
+      "type": "string"
+    },
+    "number4Body": {
+      "type": "richtext"
+    },
+    "number5Icon": {
+      "type": "string"
+    },
+    "number5Heading": {
+      "type": "string"
+    },
+    "number5Body": {
+      "type": "richtext"
+    },
+    "number6Heading": {
+      "type": "string"
+    },
+    "number6Icon": {
+      "type": "string"
+    },
+    "number6Body": {
+      "type": "richtext"
+    },
+    "topVideoURL": {
+      "type": "string"
+    },
+    "topCallOutMessage": {
+      "type": "richtext"
+    },
+    "topCallOutBtnText": {
+      "type": "string"
+    },
+    "topCallOutBtnURL": {
+      "type": "string"
+    },
+    "bottomInfoTitle": {
+      "type": "string"
+    },
+    "bottomInfoSubtitle": {
+      "type": "string"
+    },
+    "bottomInfo1Icon": {
+      "type": "string"
+    },
+    "bottomInfo1Heading": {
+      "type": "string"
+    },
+    "bottomInfo1Body": {
+      "type": "richtext"
+    },
+    "bottomInfo2Icon": {
+      "type": "string"
+    },
+    "bottomInfo2Heading": {
+      "type": "string"
+    },
+    "bottomInfo2Body": {
+      "type": "richtext"
+    },
+    "bottomInfo3Icon": {
+      "type": "string"
+    },
+    "bottomInfo3Heading": {
+      "type": "string"
+    },
+    "bottomInfo3Body": {
+      "type": "richtext"
     }
   }
 }

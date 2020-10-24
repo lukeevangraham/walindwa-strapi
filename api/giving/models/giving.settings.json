@@ -26,6 +26,21 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "donateNowTopText": {
+      "type": "richtext"
+    },
+    "donateNowMainText": {
+      "type": "richtext"
+    },
+    "waysToGiveImages": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

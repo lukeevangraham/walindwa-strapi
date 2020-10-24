@@ -13,7 +13,8 @@
       "type": "string"
     },
     "lastName": {
-      "type": "string"
+      "type": "string",
+      "private": true
     },
     "gender": {
       "type": "enumeration",
@@ -52,9 +53,12 @@
     "fieldOfStudy": {
       "type": "string"
     },
-    "sponsor_categories": {
-      "via": "sponsorship_opportunities",
-      "collection": "sponsor-category"
+    "spon_cat": {
+      "model": "spon-cats",
+      "via": "sponsorship_opportunities"
+    },
+    "sponsorshipNeeded": {
+      "type": "text"
     }
   }
 }
